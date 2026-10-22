@@ -50,7 +50,7 @@ function createDrop() {
     clearInterval(dropMaker);
 
     message.style.display = "block";
-    if (parseInt(score.textContent) > 20) {
+    if (parseInt(score.textContent) >= 20) {
       message.textContent = winMessages[Math.floor(Math.random() * winMessages.length)];
     } else {
       message.textContent = loseMessages[Math.floor(Math.random() * loseMessages.length)];
